@@ -34,8 +34,8 @@ The Unix shell script run.sh provides an example of the setup and run sequence o
     - writes output to datafiles/app_reports.json and datafiles/app_reportsurls.json
     
     get-license-overrides.py
-    - reads all scan results (from list above) and gets license all license overrides ie. where Status is not 'Overriden')
-    - writes output datafiles/license_ovveriddes.csv (also outputs json file for each application in datafiles/licensedata/<appname>.json
+    - reads all scan results (from list above) and gets license all effective licenses)
+    - writes output datafiles/licenses.csv (also outputs json file for each application in datafiles/licensedata/<appname>.json
     - this script is potentially resource-intensive so it is definitely not recommended running this on a production instance
     
     get-security-overrides-policyinfo.py
